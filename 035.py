@@ -1,5 +1,4 @@
 from emoji import emojize
-
 print('Vamos ver ser você consegue formar um trangulo!')
 a = int(input('Primeiro valor: '))
 b = int(input('Segundo valor: '))
