@@ -27,6 +27,6 @@ elif n == 0 and ndm == 2:
     print('VOCÊ PERDEU!')
 elif n == 1 and ndm == 0:
     print('VOCÊ PERDEU!')
-elif n == 2 and ndm == 1:
+else:
     print('VOCÊ PERDEU!')
 print(emojize(f'Eu escolhi {máquina} :smiling_face_with_sunglasses::smiling_face_with_sunglasses:'))
