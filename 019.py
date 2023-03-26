@@ -1,4 +1,4 @@
-from random import choice
+from random2 import choice
 a1 = str(input('Digite o nome do aluno 1: '))
 a2 = str(input('Digite o nome do aluno 2: '))
 a3 = str(input('Digite o nome do aluno 3: '))
