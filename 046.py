@@ -8,7 +8,7 @@ print('''
 [1] NÃO EXPLODIR A BOMBA
 ''')
 e = int(input('Escolha uma opção: '))
-#WHILE PARA REPETIR CASO A RESPOSTA SEJA INADEQUADA 
+#WHILE PARA REPETIR CASO A RESPOSTA SEJA INADEQUADA
 while e != 0 and e != 1:
     print('VOCÊ NÃO ESCOLHERU NENHUMA DAS OPÇÕES')
     e = int(input('Escolha uma opção: '))
