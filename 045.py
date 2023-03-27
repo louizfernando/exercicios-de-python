@@ -3,7 +3,7 @@ from random2 import randint, choice
 print('Vamos jogar pedra, papel e tesoura.')
 lista = ['pedra', 'papel', 'tesoura']
 máquina = choice(lista)
-#nmd == número da máquina 
+#nmd == número da máquina
 ndm = randint(0, 2)
 print('''[0] PEDRA 
 [1] PAPEL
@@ -23,6 +23,7 @@ elif n == 2 and ndm == 0:
 elif n == ndm:
     print('EMPATE!')
 #O JOGADOR PERDE
+
 elif n == 0 and ndm == 2:
     print('VOCÊ PERDEU!')
 elif n == 1 and ndm == 0:
