@@ -23,7 +23,6 @@ elif n == 2 and ndm == 0:
 elif n == ndm:
     print('EMPATE!')
 #O JOGADOR PERDE
-
 elif n == 0 and ndm == 2:
     print('VOCÊ PERDEU!')
 elif n == 1 and ndm == 0:

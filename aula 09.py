@@ -2,7 +2,7 @@ frase = 'Curso em Video'
 print(frase[2:3:3])
 print(frase[::3])
 print(len(frase))
-print(frase.count('e', 0, 12))
+print(frase.count('e', 0, 14))
 print(frase.find('deo'))
 print(frase.find('android'))
 print('curso' in frase)
