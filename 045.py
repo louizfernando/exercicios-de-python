@@ -5,7 +5,7 @@ lista = ['pedra', 'papel', 'tesoura']
 máquina = choice(lista)
 #nmd == número da máquina
 ndm = randint(0, 2)
-print('''[0] PEDRA 
+print('''[0] PEDRA
 [1] PAPEL
 [2] TESOURA''')
 #O JOGADOR GANHA
