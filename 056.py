@@ -1,21 +1,25 @@
-soma_idade = 0
-maior_idade_homem = 0
+media = 0
+maior_idade_h = 0
+menos_de_vinte = 0
 nome_velho = ''
-idade_mulher = 0
-for p in range(1, 3):
-    print(f'--- {p}° PESSOA ---')
-    nome = str(input('Nome: '))
+plural_m = ''
+for c in range(1, 4):
+    print(F'----- {c}ª PESSOA -----')
+    nome  = str(input('Nome: '))
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: '))
-    soma_idade += idade
-    if p == 1 and sexo in 'Mn':
-        maior_idade_homem = idade
+    sexo = str(input('Sexo M/F: ')).upper()
+    media += idade
+    if c == 1 and sexo in 'M':
+        maior_idade_h = idade
         nome_velho = nome
-    if sexo in 'Mn' and idade > maior_idade_homem:
-        maior_idade_homem = idade
+    if sexo in 'M' and idade > maior_idade_h:
+        maior_idade_h = idade
         nome_velho = nome
-    if sexo in 'Ff' and idade < 20:
-        idade_mulher += 1
-print(f'A média das idade do grupo é de {soma_idade / p :.1f} anos.')
-print(f'O homem mais velho tem {maior_idade_homem} e se chama {nome_velho}')
-print(f'No grupo existem {idade_mulher} mulheres com menos de 20 anos')
+    if idade < 20 and sexo in 'F':
+        menos_de_vinte += 1
+        if menos_de_vinte > 1:
+            plural_m = 'es'
+        else:
+            plural_m = ''
+print(f'{nome_velho} tem {maior_idade_h} anos, ele é o homem mais velho do grupo.')
+print(f'{menos_de_vinte} mulher{plural_m} tem menos de vinte anos.')
